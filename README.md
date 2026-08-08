@@ -6,6 +6,14 @@ Live page: [demouo.github.io/monthly-concepts](https://demouo.github.io/monthly-
 
 This is a deliberately small archive of breakthrough concepts in AI and technology. Starting in January 2026, each completed month keeps exactly three entries. The archive is editorial, not a popularity chart or a news feed.
 
+## Preview
+
+![CONCEPTS title](assets/title.png)
+
+![Current month](assets/top.png)
+
+![Archive](assets/archive.png)
+
 ## What qualifies
 
 - The public contribution or first clear articulation belongs to 2026. Older breakthroughs are not backfilled into the ranked archive.
@@ -40,4 +48,3 @@ Then open <http://localhost:8000>.
 ## Editorial boundary
 
 The archive is allowed to be incomplete. A loud launch can remain outside it. A concept can be removed later if it does not produce evidence or if a better contribution explains the month more honestly.
-
