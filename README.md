@@ -27,7 +27,7 @@ Each entry has exactly three links:
 - Proof — an implementation, result, benchmark, or working system.
 - Context — the clearest route into the idea.
 
-The page keeps no numeric score. The only editorial states are Archived, Emerging, Established, and Provisional. August 2026 is intentionally provisional because the month is still open.
+The page keeps no numeric score. The only editorial states are Archived, Emerging, Established, and Provisional. The current month is intentionally provisional until its month-end freeze.
 
 ## Repository
 
