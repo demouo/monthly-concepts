@@ -1,85 +1,171 @@
 window.CONCEPT_MONTHS = [
   {
-    month: "2026-08",
-    label: "August 2026",
+    month: "2026-09",
+    label: "September 2026",
     state: "provisional",
-    note: "First-week snapshot. These three are deliberately provisional and will be frozen after the month closes.",
+    note: "First-week snapshot. These three are provisional; selection favors concepts that change the data substrate, reasoning substrate, or operational forecast—not another model launch.",
     concepts: [
       {
         rank: 1,
-        concept: "Scientific software stewardship",
-        contributor: "OpenAI · scientific computing",
-        published: "28 Jul 2026",
-        status: "Provisional",
-        thesis: "When agents make implementation cheap, scientific software becomes a maintained research asset rather than disposable code.",
-        whyNow: "The interesting shift is not faster coding alone. It is the chance to repair, modernize, and keep alive the infrastructure that quietly determines what science can be done.",
+        concept: "Human-video robot scaling",
+        contributor: "Dyna Robotics · Dyna-2",
+        published: "10 Aug 2026",
+        status: "Emerging",
+        thesis: "Robots can inherit a scalable prior from human egocentric video: video prediction and action prediction share a world model, then a small amount of robot data transfers the capability across embodiments.",
+        whyNow: "Dyna-2 reports a human-to-robot transfer scaling law from 1,000 to 1,000,000 hours, with robot performance improving as human data grows and some tasks adapting from minutes of teleoperation. If it holds outside one lab, the scarce resource in robot learning shifts from labeled robot trajectories to broad human experience.",
         links: [
           {
             role: "Origin",
-            title: "Scientific computing in the age of agentic AI",
-            url: "https://openai.com/index/scientific-computing-agentic-ai/"
+            title: "Dyna-2: A 1-Million-Hour Scaling Law for World-Action Models",
+            url: "https://www.dyna.co/dyna-2"
           },
           {
             role: "Proof",
-            title: "MHCflurry · an open scientific software project",
-            url: "https://github.com/openvax/mhcflurry"
+            title: "Not Just a Model, But a Product",
+            url: "https://www.dyna.co/research/scaling-customer-deployments"
           },
           {
             role: "Context",
-            title: "AI as a scientific collaborator",
-            url: "https://cdn.openai.com/pdf/f4b4a5da-b2de-418d-9fcd-6b293e9dc157/oai_ai-as-a-scientific-collaborator_jan-2026.pdf"
+            title: "World Action Models are Zero-shot Policies",
+            url: "https://arxiv.org/abs/2602.15922"
           }
         ]
       },
       {
         rank: 2,
-        concept: "Harness distillation",
-        contributor: "Agent Harness Distillation",
-        published: "30 Jul 2026",
-        status: "Provisional",
-        thesis: "The inference-time harness around a model is valuable enough to become a new object of extraction, defense, and intellectual property.",
-        whyNow: "As agents depend on tools, memory, policies, and feedback loops, the model is no longer the whole product. Reproducing the surrounding control system becomes its own security problem.",
+        concept: "Latent reasoning",
+        contributor: "Pathway Research · BDH-CQ",
+        published: "10 Aug 2026",
+        status: "Emerging",
+        thesis: "Reasoning does not have to be serialized as visible language: a recurrent latent workspace can update memory and iterate in continuous hidden states, decoding only when an answer is ready.",
+        whyNow: "BDH-CQ pairs in-context learning with recurrent latent reasoning and reports 29.5% pass@2 on ARC-AGI-1 at $0.0007 per task, an 11× cheaper operating point than the compared model. The result is narrow and provider-reported, but it makes the representation and cost of thought an explicit design axis.",
         links: [
           {
             role: "Origin",
-            title: "Agent Harness Distillation",
-            url: "https://arxiv.org/abs/2607.28147"
+            title: "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+            url: "https://arxiv.org/abs/2608.09888"
           },
           {
             role: "Proof",
-            title: "What makes a harness a harness?",
-            url: "https://arxiv.org/abs/2606.10106"
+            title: "Pathway’s 150M-Parameter Model Breaks the ARC-AGI-1 Cost-Efficiency Frontier",
+            url: "https://pathway.com/blog/pathway-150m-model-breaks-arc-agi-1-cost-efficiency-frontier"
           },
           {
             role: "Context",
-            title: "Program agent harnesses with the AI SDK",
-            url: "https://vercel.com/changelog/program-agent-harnesses-with-ai-sdk"
+            title: "BDH: Bridging the Gap Between Transformers and the Brain",
+            url: "https://github.com/pathwaycom/bdh"
           }
         ]
       },
       {
         rank: 3,
-        concept: "Production agent control plane",
-        contributor: "OpenAI Presence",
-        published: "22 Jul 2026",
-        status: "Provisional",
-        thesis: "A production agent is a controlled operating surface: model reasoning joined to policies, evaluations, guardrails, escalation, and measured rollout.",
-        whyNow: "The frontier is moving from proving that an agent can act to operating one safely while products, policies, and user behavior keep changing.",
+        concept: "Coarse-to-extreme weather models",
+        contributor: "Google DeepMind · Google Research · NOAA/NHC · UK Met Office",
+        published: "06 Aug 2026",
+        status: "Emerging",
+        thesis: "A single generative weather model can bridge global circulation and local storm intensity, using coarse atmospheric inputs to produce probabilistic cyclone track, strength, and wind-structure forecasts.",
+        whyNow: "WeatherNext Cyclones reports about a day of extra lead time over leading operational baselines, while scaling to 1,000-member ensembles and releasing code and weights. The conceptual shift is that uncertainty and extremes can be modeled together instead of handing track and intensity to separate resolution regimes.",
         links: [
           {
             role: "Origin",
-            title: "Introducing OpenAI Presence",
-            url: "https://openai.com/index/introducing-openai-presence/"
+            title: "Operational Tropical Cyclone Forecasting with AI",
+            url: "https://www.nature.com/articles/s41586-026-10953-2"
           },
           {
             role: "Proof",
-            title: "Harness engineering",
-            url: "https://openai.com/index/harness-engineering/"
+            title: "WeatherNext",
+            url: "https://github.com/google-deepmind/weathernext"
           },
           {
             role: "Context",
-            title: "AI agent standards initiative",
-            url: "https://www.nist.gov/artificial-intelligence/ai-agent-standards-initiative"
+            title: "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+            url: "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    month: "2026-08",
+    label: "August 2026",
+    state: "archived",
+    note: "The month is closed. Selection favors concepts that change the interface, evidence, or data pipeline—not another model launch.",
+    concepts: [
+      {
+        rank: 1,
+        concept: "Physical agent interface",
+        contributor: "Anthropic · HHMI Janelia · QuEra Computing",
+        published: "27 Aug 2026",
+        status: "Emerging",
+        thesis: "An agent reaches the physical world through a standard device layer: capabilities, state, and safety limits become discoverable, composable interfaces rather than bespoke integrations.",
+        whyNow: "The hard step beyond a robot demo is coordinating instruments that were never designed to share a language. MHS turns physical equipment into an agent-readable substrate while keeping bounds and interlocks at the device boundary.",
+        links: [
+          {
+            role: "Origin",
+            title: "Previewing the Model Hardware Standard",
+            url: "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+          },
+          {
+            role: "Proof",
+            title: "QuEra uses AI to automate a critical quantum computer subsystem",
+            url: "https://www.quera.com/press-releases/quera-computing-uses-ai-to-automate-a-critical-quantum-computer-subsystem-enabling-the-acceleration-of-commercial-grade-quantum-computing-deployments-from-quera"
+          },
+          {
+            role: "Context",
+            title: "Model Hardware Standard",
+            url: "https://modelhardwarestandard.com/"
+          }
+        ]
+      },
+      {
+        rank: 2,
+        concept: "Double-blind model evaluation",
+        contributor: "Google DeepMind · OpenMined · AVERI · MLCommons",
+        published: "27 Aug 2026",
+        status: "Emerging",
+        thesis: "A trustworthy benchmark can become a cryptographic protocol: evaluators keep prompts secret while model owners keep weights private, and neither side must rely on the other’s promise.",
+        whyNow: "Static benchmarks decay when models can learn their questions. Confidential enclaves make independent testing possible without transferring the assets whose secrecy gives the test value.",
+        links: [
+          {
+            role: "Origin",
+            title: "Piloting the world's first double-blind AI evaluations",
+            url: "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/"
+          },
+          {
+            role: "Proof",
+            title: "Double Blind Evals: Resolving the Dual Confidentiality Dilemma",
+            url: "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/piloting-the-worlds-first-double-blind-ai-evaluations/double-blind-evaluations-technical-report.pdf"
+          },
+          {
+            role: "Context",
+            title: "Verifiable, private AI: Confidential Computing frontiers",
+            url: "https://cloud.google.com/blog/products/identity-security/verifiable-trust-in-the-ai-era-whats-new-in-confidential-computing"
+          }
+        ]
+      },
+      {
+        rank: 3,
+        concept: "Open-world geospatial modeling",
+        contributor: "Google Research · Google Earth AI",
+        published: "26 Aug 2026",
+        status: "Emerging",
+        thesis: "Geospatial prediction becomes an open-world agent task: start with a natural-language question, discover relevant signals, curate multimodal data, train models, and audit generalization in one loop.",
+        whyNow: "The bottleneck is no longer only the model. It is finding the right geography, time window, proxy, and leakage boundary. PPE makes that hidden data-engineering work part of the system and tests it across health, food security, and outbreak response.",
+        links: [
+          {
+            role: "Origin",
+            title: "Planetary Prediction Engine: Autonomous Geospatial Prediction",
+            url: "https://arxiv.org/abs/2608.26088"
+          },
+          {
+            role: "Proof",
+            title: "Planetary prediction engine: Automating global models via Earth AI",
+            url: "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/"
+          },
+          {
+            role: "Context",
+            title: "Google Earth AI: Geospatial insights with foundation models",
+            url: "https://research.google/blog/google-earth-ai-unlocking-geospatial-insights-with-foundation-models-and-cross-modal-reasoning/"
           }
         ]
       }
