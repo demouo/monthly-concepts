@@ -1,85 +1,171 @@
 window.CONCEPT_MONTHS = [
   {
-    month: "2026-08",
-    label: "August 2026",
-    state: "provisional",
-    note: "First-week snapshot. These three are deliberately provisional and will be frozen after the month closes.",
+    month: "2026-09",
+    label: "September 2026",
+    state: "archived",
+    note: "The month is closed. Selection favors concepts that change the trust, search, or verification layer—not another model launch.",
     concepts: [
       {
         rank: 1,
-        concept: "Scientific software stewardship",
-        contributor: "OpenAI · scientific computing",
-        published: "28 Jul 2026",
-        status: "Provisional",
-        thesis: "When agents make implementation cheap, scientific software becomes a maintained research asset rather than disposable code.",
-        whyNow: "The interesting shift is not faster coding alone. It is the chance to repair, modernize, and keep alive the infrastructure that quietly determines what science can be done.",
+        concept: "Auditable model training",
+        contributor: "Gensyn · open-1b",
+        published: "15 Sep 2026",
+        status: "Emerging",
+        thesis: "Open weights can become a verifiable training trajectory: fix nondeterminism across heterogeneous hardware, publish per-step evidence, and let independent auditors replay the run instead of trusting the recipe.",
+        whyNow: "Open-1B releases a 1.61B model trained on 400B tokens with 80,957 hashed steps, intermediate checkpoints, data, code, and an audit harness. Exact replay on CPUs, GPUs, and Apple Silicon turns provenance from a claim into evidence someone else can check; the substantial speed cost and weaker benchmark score make clear that the breakthrough is the transparency layer, not the model itself.",
         links: [
           {
             role: "Origin",
-            title: "Scientific computing in the age of agentic AI",
-            url: "https://openai.com/index/scientific-computing-agentic-ai/"
+            title: "OPEN-1B: A Fully Auditable Training Run",
+            url: "https://arxiv.org/abs/2609.17380"
           },
           {
             role: "Proof",
-            title: "MHCflurry · an open scientific software project",
-            url: "https://github.com/openvax/mhcflurry"
+            title: "OPEN training and audit-replay harness",
+            url: "https://github.com/gensyn-ai/open-transformers"
           },
           {
             role: "Context",
-            title: "AI as a scientific collaborator",
-            url: "https://cdn.openai.com/pdf/f4b4a5da-b2de-418d-9fcd-6b293e9dc157/oai_ai-as-a-scientific-collaborator_jan-2026.pdf"
+            title: "Introducing open-1b: the first model you don’t have to trust",
+            url: "https://www.gensyn.ai/news/introducing-open-1b-auditable-training"
           }
         ]
       },
       {
         rank: 2,
-        concept: "Harness distillation",
-        contributor: "Agent Harness Distillation",
-        published: "30 Jul 2026",
-        status: "Provisional",
-        thesis: "The inference-time harness around a model is valuable enough to become a new object of extraction, defense, and intellectual property.",
-        whyNow: "As agents depend on tools, memory, policies, and feedback loops, the model is no longer the whole product. Reproducing the surrounding control system becomes its own security problem.",
+        concept: "Replay-world self-improvement",
+        contributor: "Google · Google DeepMind · University of Maryland · University of Virginia",
+        published: "14 Sep 2026",
+        status: "Emerging",
+        thesis: "The self-improvement target can be the exploration policy, not the base model: turn completed discovery trees into replay worlds, test branching and stopping strategies offline, then redeploy the winner to collect a richer world.",
+        whyNow: "Dream-RSI evaluates this loop across algorithm engineering, mathematical optimization, and GPU-kernel engineering, reporting up to 162× fewer agent calls than SimpleTES and better results at matched budgets in several settings. It moves recursive improvement into the economics of search, while the full codebase and reproduction scripts remain pending.",
         links: [
           {
             role: "Origin",
-            title: "Agent Harness Distillation",
-            url: "https://arxiv.org/abs/2607.28147"
+            title: "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+            url: "https://arxiv.org/abs/2609.14858"
           },
           {
             role: "Proof",
-            title: "What makes a harness a harness?",
-            url: "https://arxiv.org/abs/2606.10106"
+            title: "Dream-RSI project page and interactive walkthrough",
+            url: "https://www.dream-rsi.com/"
           },
           {
             role: "Context",
-            title: "Program agent harnesses with the AI SDK",
-            url: "https://vercel.com/changelog/program-agent-harnesses-with-ai-sdk"
+            title: "Official Dream-RSI repository and release status",
+            url: "https://github.com/zhengkid/Dream-RSI"
           }
         ]
       },
       {
         rank: 3,
-        concept: "Production agent control plane",
-        contributor: "OpenAI Presence",
-        published: "22 Jul 2026",
-        status: "Provisional",
-        thesis: "A production agent is a controlled operating surface: model reasoning joined to policies, evaluations, guardrails, escalation, and measured rollout.",
-        whyNow: "The frontier is moving from proving that an agent can act to operating one safely while products, policies, and user behavior keep changing.",
+        concept: "AI formalization at scale",
+        contributor: "Anthropic · Columbia University formalization research",
+        published: "04 Sep 2026",
+        status: "Emerging",
+        thesis: "The useful unit of AI mathematics is not a persuasive explanation but a proof artifact that a small kernel can check: agents can assemble a long argument in a formal language and leave the final claim to machine verification.",
+        whyNow: "Anthropic released a complete Lean formalization of Fermat’s Last Theorem after an 11-day largely autonomous effort, with 13 million lines and roughly 29,500 intermediate theorems. Lean and an independent Rust kernel checked the artifact against standard axioms; the result formalizes the known Wiles–Taylor–Wiles proof rather than claiming a new theorem, but makes large-scale formal verification a practical research object.",
         links: [
           {
             role: "Origin",
-            title: "Introducing OpenAI Presence",
-            url: "https://openai.com/index/introducing-openai-presence/"
+            title: "Formalizing Fermat’s Last Theorem",
+            url: "https://www.anthropic.com/news/formalizing-fermats-last-theorem"
           },
           {
             role: "Proof",
-            title: "Harness engineering",
-            url: "https://openai.com/index/harness-engineering/"
+            title: "Fermat’s Last Theorem in Lean 4",
+            url: "https://github.com/anthropics/fermats-last-theorem"
           },
           {
             role: "Context",
-            title: "AI agent standards initiative",
-            url: "https://www.nist.gov/artificial-intelligence/ai-agent-standards-initiative"
+            title: "Imperial College London FLT formalization project",
+            url: "https://github.com/ImperialCollegeLondon/FLT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    month: "2026-08",
+    label: "August 2026",
+    state: "archived",
+    note: "The month is closed. Selection favors concepts that change the interface, evidence, or data pipeline—not another model launch.",
+    concepts: [
+      {
+        rank: 1,
+        concept: "Physical agent interface",
+        contributor: "Anthropic · HHMI Janelia · QuEra Computing",
+        published: "27 Aug 2026",
+        status: "Emerging",
+        thesis: "An agent reaches the physical world through a standard device layer: capabilities, state, and safety limits become discoverable, composable interfaces rather than bespoke integrations.",
+        whyNow: "The hard step beyond a robot demo is coordinating instruments that were never designed to share a language. MHS turns physical equipment into an agent-readable substrate while keeping bounds and interlocks at the device boundary.",
+        links: [
+          {
+            role: "Origin",
+            title: "Previewing the Model Hardware Standard",
+            url: "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+          },
+          {
+            role: "Proof",
+            title: "QuEra uses AI to automate a critical quantum computer subsystem",
+            url: "https://www.quera.com/press-releases/quera-computing-uses-ai-to-automate-a-critical-quantum-computer-subsystem-enabling-the-acceleration-of-commercial-grade-quantum-computing-deployments-from-quera"
+          },
+          {
+            role: "Context",
+            title: "Model Hardware Standard",
+            url: "https://modelhardwarestandard.com/"
+          }
+        ]
+      },
+      {
+        rank: 2,
+        concept: "Double-blind model evaluation",
+        contributor: "Google DeepMind · OpenMined · AVERI · MLCommons",
+        published: "27 Aug 2026",
+        status: "Emerging",
+        thesis: "A trustworthy benchmark can become a cryptographic protocol: evaluators keep prompts secret while model owners keep weights private, and neither side must rely on the other’s promise.",
+        whyNow: "Static benchmarks decay when models can learn their questions. Confidential enclaves make independent testing possible without transferring the assets whose secrecy gives the test value.",
+        links: [
+          {
+            role: "Origin",
+            title: "Piloting the world's first double-blind AI evaluations",
+            url: "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/"
+          },
+          {
+            role: "Proof",
+            title: "Double Blind Evals: Resolving the Dual Confidentiality Dilemma",
+            url: "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/piloting-the-worlds-first-double-blind-ai-evaluations/double-blind-evaluations-technical-report.pdf"
+          },
+          {
+            role: "Context",
+            title: "Verifiable, private AI: Confidential Computing frontiers",
+            url: "https://cloud.google.com/blog/products/identity-security/verifiable-trust-in-the-ai-era-whats-new-in-confidential-computing"
+          }
+        ]
+      },
+      {
+        rank: 3,
+        concept: "Open-world geospatial modeling",
+        contributor: "Google Research · Google Earth AI",
+        published: "26 Aug 2026",
+        status: "Emerging",
+        thesis: "Geospatial prediction becomes an open-world agent task: start with a natural-language question, discover relevant signals, curate multimodal data, train models, and audit generalization in one loop.",
+        whyNow: "The bottleneck is no longer only the model. It is finding the right geography, time window, proxy, and leakage boundary. PPE makes that hidden data-engineering work part of the system and tests it across health, food security, and outbreak response.",
+        links: [
+          {
+            role: "Origin",
+            title: "Planetary Prediction Engine: Autonomous Geospatial Prediction",
+            url: "https://arxiv.org/abs/2608.26088"
+          },
+          {
+            role: "Proof",
+            title: "Planetary prediction engine: Automating global models via Earth AI",
+            url: "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/"
+          },
+          {
+            role: "Context",
+            title: "Google Earth AI: Geospatial insights with foundation models",
+            url: "https://research.google/blog/google-earth-ai-unlocking-geospatial-insights-with-foundation-models-and-cross-modal-reasoning/"
           }
         ]
       }
