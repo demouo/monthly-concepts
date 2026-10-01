@@ -1,5 +1,91 @@
 window.CONCEPT_MONTHS = [
   {
+    month: "2026-10",
+    label: "October 2026",
+    state: "provisional",
+    note: "The month is open. Selection favors concepts that change the unit of progress—from machine-checkable discovery to continuous representation and distributed physical inference.",
+    concepts: [
+      {
+        rank: 1,
+        concept: "Machine-generated mathematical proof",
+        contributor: "OpenAI · internal research system",
+        published: "08 Sep 2026",
+        status: "Provisional",
+        thesis: "AI systems can now propose research-grade mathematical constructions and leave a machine-checkable artifact: the useful unit is not a fluent explanation but a proof that formal tools can inspect.",
+        whyNow: "OpenAI shared a 166-page finite-time blowup construction for the forced three-dimensional incompressible Navier–Stokes equations together with Lean certificates, targeting alternatives C and D in the Clay formulation. It is a new discovery-and-verification loop, but OpenAI explicitly does not claim the Millennium Prize and independent mathematical scrutiny remains essential.",
+        links: [
+          {
+            role: "Origin",
+            title: "On the Navier–Stokes Millennium Prize Problem",
+            url: "https://openai.com/index/navier-stokes-solution/"
+          },
+          {
+            role: "Proof",
+            title: "Lean certificates accompanying Navier-Stokes and Euler results",
+            url: "https://github.com/openai/NavierStokesAndEuler"
+          },
+          {
+            role: "Context",
+            title: "Navier–Stokes Existence and Smoothness",
+            url: "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+          }
+        ]
+      },
+      {
+        rank: 2,
+        concept: "Continuous multimodal modeling",
+        contributor: "Huazhong University of Science and Technology · Beijing Jiaotong University · Horizon Robotics",
+        published: "30 Sep 2026",
+        status: "Provisional",
+        thesis: "Language and images can share one continuous generative process without forcing vision into tokens or splitting modalities into incompatible objectives: represent both as ordered continuous hyperchunks and learn a single flow.",
+        whyNow: "Multimodal Flow trains 0.6B–1.6B models with a chunk-causal flow backbone, reports competitive scores with 150B pretraining tokens, and releases code plus model weights. The architectural claim is unusually clean, but the paper is newly public and external reproduction is still pending.",
+        links: [
+          {
+            role: "Origin",
+            title: "Multimodal Flow: Unified Flow Modeling of Language and Vision in Embedding Spaces",
+            url: "https://arxiv.org/abs/2609.40362"
+          },
+          {
+            role: "Proof",
+            title: "Multimodal Flow open-source implementation",
+            url: "https://github.com/hustvl/Multimodal-Flow"
+          },
+          {
+            role: "Context",
+            title: "Multimodal Flow model checkpoints",
+            url: "https://huggingface.co/hustvl/Multimodal-Flow"
+          }
+        ]
+      },
+      {
+        rank: 3,
+        concept: "Distributed physical AI inference",
+        contributor: "Microsoft Research · Physical AI Toolchain",
+        published: "23 Sep 2026",
+        status: "Emerging",
+        thesis: "A robot does not need to carry the model that controls it: separate the low-power physical body from heavier edge or cloud inference, then treat latency, bandwidth, battery, and safety as one systems problem.",
+        whyNow: "Microsoft’s measurement study shows that smaller onboard GPUs can cut VLA accuracy by 50%, while offloading inference improves success rates and can more than double battery life for Stretch-3. The released Kubernetes toolchain makes the architecture usable, but network failures and real-time safety remain the boundary.",
+        links: [
+          {
+            role: "Origin",
+            title: "Offloaded inference for real-world physical AI robotics",
+            url: "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/"
+          },
+          {
+            role: "Proof",
+            title: "Offload or Overload: A Platform Measurement Study of Mobile Robotic Manipulation Workloads",
+            url: "https://www.microsoft.com/en-us/research/publication/offload-or-overload-a-platform-measurement-study-of-mobile-robotic-manipulation-workloads/"
+          },
+          {
+            role: "Context",
+            title: "Physical AI Toolchain",
+            url: "https://github.com/microsoft/physical-ai-toolchain/tree/main"
+          }
+        ]
+      }
+    ]
+  },
+  {
     month: "2026-09",
     label: "September 2026",
     state: "archived",
