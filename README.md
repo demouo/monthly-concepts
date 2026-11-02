@@ -4,7 +4,7 @@ Three ideas worth remembering each month.
 
 Live page: [demouo.github.io/monthly-concepts](https://demouo.github.io/monthly-concepts/)
 
-This is a deliberately small archive of breakthrough concepts in AI and technology. Starting in January 2026, each completed month keeps exactly three entries. The archive is editorial, not a popularity chart or a news feed.
+This is a deliberately small archive of breakthrough concepts in AI and technology. Each completed month keeps exactly three entries. The archive is editorial, not a popularity chart or a news feed.
 
 ## Preview
 
@@ -16,7 +16,7 @@ This is a deliberately small archive of breakthrough concepts in AI and technolo
 
 ## What qualifies
 
-- The public contribution or first clear articulation belongs to 2026. Older breakthroughs are not backfilled into the ranked archive.
+- The public contribution or first clear articulation belongs to the archive's coverage window. Older breakthroughs are not backfilled into the ranked archive.
 - It changes how a problem is framed, built, measured, or operated.
 - It has generative force: other projects, papers, products, or methods can grow from it.
 - It survives a short explanation without a score, leaderboard, or hype language.
