@@ -1,5 +1,91 @@
 window.CONCEPT_MONTHS = [
   {
+    month: "2026-11",
+    label: "November 2026",
+    state: "provisional",
+    note: "The month is open. Selection favors concepts that put empirical feedback, public verification, or new internal computation into the agent loop.",
+    concepts: [
+      {
+        rank: 1,
+        concept: "Lab-in-the-loop agentic discovery",
+        contributor: "Google Research · Google DeepMind · Stanford University",
+        published: "16–23 Oct 2026",
+        status: "Provisional",
+        thesis: "A scientific agent becomes a learning system only when the experiment sits inside the loop: propose candidates, run the assay, diagnose failure, and let measured feedback change the next round.",
+        whyNow: "Google's aptamer study ran roughly 4,400 constructs through three design–test–improve cycles; new-candidate hit rates reached 42.1% for α-thrombin and 33.5% for myoglobin while the agent diagnosed cross-reactivity and recovered specificity. The companion VERID system adds a live semantic digital twin, dry runs, safety checks, and trace logs for physical execution; results remain a controlled biomolecular sandbox, not a general autonomous lab.",
+        links: [
+          {
+            role: "Origin",
+            title: "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+            url: "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+          },
+          {
+            role: "Proof",
+            title: "Aptamers as a sandbox for lab-in-the-loop agentic molecular discovery",
+            url: "https://arxiv.org/abs/2610.24806"
+          },
+          {
+            role: "Context",
+            title: "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+            url: "https://arxiv.org/abs/2610.32755"
+          }
+        ]
+      },
+      {
+        rank: 2,
+        concept: "Open research artifacts",
+        contributor: "OpenAI · internal frontier model · academic shepherds",
+        published: "06–26 Oct 2026",
+        status: "Provisional",
+        thesis: "A frontier research model's output can be released as raw research data: manuscripts, selected reasoning summaries, and formal artifacts that an external community can inspect, explain, and extend.",
+        whyNow: "OpenAI's 6 October release placed a large corpus of AI-generated manuscripts in a versioned GitHub repository with Lean formalizations and acquisition details; its 26 October release added external academic shepherds for new math, complexity, and physics results. The claims are not settled—the repository says not all results are formalized and the ETH manuscript remains under review—so the breakthrough is the disclosure-and-verification loop, not a certified theorem.",
+        links: [
+          {
+            role: "Origin",
+            title: "Sharing AI progress in mathematics",
+            url: "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+          },
+          {
+            role: "Proof",
+            title: "OpenAI math repository: manuscripts, reasoning summaries, and Lean artifacts",
+            url: "https://github.com/openai/math"
+          },
+          {
+            role: "Context",
+            title: "Working with academic communities to build scientific understanding",
+            url: "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+          }
+        ]
+      },
+      {
+        rank: 3,
+        concept: "Hybrid reasoning agents",
+        contributor: "Stanford University · UIUC · Together AI · Meta",
+        published: "13 Oct 2026",
+        status: "Provisional",
+        thesis: "An agent can think in a continuous latent space and switch to text only when it must call a tool or communicate: one generation can combine cheap private computation with inspectable external action.",
+        whyNow: "HybridAgent combines a HybridLink, shared working memory, HybridSFT, and HybridRL; across 11 benchmarks the authors report 10.4% higher performance, 35.5–54.7% fewer tokens, and 2.7–3.7× lower cost than compared systems. The code and 14B/8B checkpoints are public, but the numbers are one paper's evaluation and latent readouts do not make the internal computation fully transparent.",
+        links: [
+          {
+            role: "Origin",
+            title: "Hybrid Reasoning Agents",
+            url: "https://arxiv.org/abs/2610.18861"
+          },
+          {
+            role: "Proof",
+            title: "HybridAgent implementation",
+            url: "https://github.com/togethercomputer/HybridAgent"
+          },
+          {
+            role: "Context",
+            title: "HybridAgent-14B-Agentic checkpoint",
+            url: "https://huggingface.co/togethercomputer/HybridAgent-14B-Agentic"
+          }
+        ]
+      }
+    ]
+  },
+  {
     month: "2026-10",
     label: "October 2026",
     state: "provisional",
